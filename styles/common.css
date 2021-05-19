@@ -51,7 +51,7 @@ body {
     color: #1E0606;
     
 }
-a { 
+a {
     text-decoration: none;
     color: inherit;
  }
@@ -71,13 +71,25 @@ p {
     display: flex;
     flex-direction: column;
 }
-.logo {
-   margin-right: 60px;
+
+.button {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: OpenSans-bold;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 9px 22px;
 }
 
 /* HEADER */
 
-header {
+.logo {
+    margin-right: 60px;
+ }
+.header {
     display: flex;
     max-width: 1180px;
     width: 100%;
@@ -113,63 +125,88 @@ h2 {
     font-size: 38px;
 }
 
-.button {
-    background: #000000;
-    color: #FFFFFF;
-    font-family: OpenSans-bold;
-    font-size: 16px;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    padding: 9px 22px;
-}
-
 /* FOOTER */
 
-footer {
-    padding: 100px 0;
+.footer {
     background: #434343;
-    color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
+.about-footer {
+    padding: 100px 0;
+    color: #FFFFFF;
+}
+.column a {
+    display: block;
+}
 .first-block-footer {
     display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 28px;
+}
+.footer-links {
+    padding-top: 28px;
+}
+.footer-links a {
+    margin-bottom: 15px;
+}
+.column form {
+    display: inline-flex;
 }
 .second-block-footer {
+    padding-top: 23px;
     display: flex;
 }
-/* .second-block-footer li{
-    margin-right: 109px;
-} */
+.email {
+    background: #666666;
+    border: 0;
+    height: 40px;
+    width: 299px;
+}
 .rating {
+    position: absolute;
     display: flex;
-    align-items: center;
+    left: 148px;
+    width: 97px;
+    justify-content: space-between;
 }
 
-.f_column, .s_column, .th_column {
+.rating-caption {
+    display: flex;
+    position: relative;
+    margin-right: 277px;
+}
+.copyright {
+    margin-right: 109px;
+}
+.column {
     width: 380px;
 }
-.s_column {
+.column form {
+    padding: 25px 0;
+
+}
+.column:nth-child(2) {
     margin: 0 20px;
 }
-.rating {
-    display: flex;
+.social li {
+    display: inline-flex;
+    margin-right: 10px;
 }
-
+.social a{
+    display: inline-block;
+}
 h4 {
     font-size: 16px;
     color: #AAAAAA;
-    border-bottom: 1px solid ;
-    border-color: #666666;
     padding-bottom: 23px;
     font-weight: unset;
 }
-
-.hidden {
-    display: none;
-    font-size: 0;
-    height: 0;
+.column h4 {
+    border-bottom: 1px solid #666666;
 }
+
+

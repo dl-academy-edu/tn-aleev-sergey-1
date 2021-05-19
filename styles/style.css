@@ -54,14 +54,14 @@ h3 {
 .heading {
     position: absolute;
     justify-content: space-between;
-    padding-top: 89px;
-    padding-left: 133px;
+    top: 89px;
+    left: 133px;
 }
 .heading * {
     margin-bottom: 20px;
 }
 .monster {
-    margin-left: 445px;
+    left: 445px;
     position: absolute;
     align-self: flex-end;
 }
@@ -91,6 +91,7 @@ h3 {
     background: #C29974;
     text-align: center;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 /* CATEGORIES */
@@ -99,14 +100,13 @@ h3 {
 h2 {
     margin-bottom: 30px;
 }
-[class^="category"] a {
+li[class^="category"] a{
     display: flex;
     height: 270px;
     width: 280px;
     font-size: 26px;
     align-items: center;
     justify-content: center;
-    
 }
 .categories_img li {
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
@@ -118,7 +118,6 @@ h2 {
     background-image: url(/images/categories/category1.png);
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 .category2 {
     background: #EADDD3;
@@ -138,11 +137,7 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
 }
-.container {
-    display: flex;
-    align-items: flex-start;
 
-}
 .arrow_left,.arrow_right {
     display: flex;
     align-items: center;
@@ -151,9 +146,9 @@ h2 {
     height: 37px;
     background: rgba(112, 187, 220, 0.2);
 }
+
 .category_text {
     width: 580px;
-    height: 44px;
     font-size: 16px;
 }
 
@@ -173,23 +168,16 @@ h2 {
 }
 
 
-
-.social li{
-    display: inline;
-}
-
 /* ABOUT */
 
 .about {
     width: 543px;
-    height: 262px;
     background: #E1F0F7;
     background-size: 100vw auto;
 }
 
 .about-btn {
     width: 123px;
-    height: 40px;
 }
 
 /* CONTACTS */
