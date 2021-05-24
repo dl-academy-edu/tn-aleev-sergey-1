@@ -1,0 +1,13 @@
+
+
+
+
+.form-container {
+    width: 680px;
+    background: #E5EAF8;
+    padding-left: 40px;
+}
+
+.form-2-column {
+    display: flex;
+}
