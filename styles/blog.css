@@ -3,8 +3,35 @@
 
 .blog-card {
     width: 380px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.blog-cards-container {
+    margin-bottom: 30px;
+}
+
+.blog-card:nth-child(3n+2)
+{
+    margin: 0 20px;
+}
+.upload-date {
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #818181;
 }
 .blog-card h2 {
+    display: flex;
+    padding-bottom: 15px;
     font-size: 24px;
     line-height: 31px;
+    text-transform: none;
+}
+.blog-card h2:hover {
+    text-decoration: underline;
+}
+.blog-card p {
+    font-size: 18px;
+    line-height: 25px;
 }
