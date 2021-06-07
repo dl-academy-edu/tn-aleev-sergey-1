@@ -1,0 +1,92 @@
+/* CATALOG-TITLE */
+
+
+
+/* CATEGORIES */
+
+.categories_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.categories_img li {
+    display: flex;
+    height: 270px;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+}
+.categories_img li:not(:last-child) {
+    margin-right: 20px;
+}
+.category a {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 26px;
+    width: 70%;
+}
+
+.categories_img li:first-child {
+    background: #DBE4DB;
+    background-image: url(/images/categories/category1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 23px;
+}
+.categories_img li:nth-child(2) {
+    background: #EADDD3;
+    background-image: url(/images/categories/category2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categories_img li:nth-child(3) {
+    background: #F8F2DA;
+    background-image: url(/images/categories/category3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categories_img li:nth-child(4) {
+    background: #D5D4E1;
+    background-image: url(/images/categories/category4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 200px;
+}
+.categories_img li:nth-child(5) {
+    background: #F3D0DB;
+    background-image: url(/images/categories/category5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categories_img li:nth-child(6) {
+    background: #E5EAF8;
+    background-image: url(/images/categories/category6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CATALOG-DESCRIPTION */
+
+.catalog-description {
+    margin: 55px 0;
+    padding-left: 200px;
+}
+.catalog-description h2 {
+    margin-bottom: 25px;
+}
+.catalog-description p {
+    max-width: 680px;
+    width: 100%;
+    
+}
+.catalog-description p:not(:last-child) {
+    margin-bottom:15px
+}
+
+
+
+
+
