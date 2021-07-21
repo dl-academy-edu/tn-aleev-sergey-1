@@ -3,8 +3,9 @@
 
 
  /* BANNER */
- h1 {
+.banner h1 {
      width: 60%;
+     line-height: 44px;
  }
 .number_banner {
     font-family: Montserrat-th;
@@ -82,7 +83,7 @@
 .caption_banner {
     
     padding: 11px;
-    font-family: Montserrat;
+    font-family: OpenSans-bold;
     width: 100%;
     height: 39px;
     font-size: 12px;
@@ -239,7 +240,7 @@ h2 {
 }
 .about p,
 .contacts p {
-    width: 483px;
+    max-width: 483px;
     line-height: 22px;
 }
 
@@ -273,7 +274,7 @@ h2 {
 }
 .map {
     position: absolute;
-    top: 127px ;
+    top: 61%;
 }
 
 /* MODAL-WINDOW */
@@ -293,7 +294,7 @@ h2 {
 .popup-open {
     display: block;
 }
-.form-container {
+.popup-container {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -305,6 +306,8 @@ h2 {
     background: transparent;
     border: none;
     cursor: pointer;
+    left: 690px;
+    top: 0;
 }
 .popup-close:hover path {
     opacity: 0.5;
