@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/normolize.css">
+    <!-- <link rel="stylesheet" href="styles/normolize.css"> -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -35,33 +35,38 @@
 <main class="grid">
 
     <section class="page-title">
-        <h1>Contact  Us</h1>
+        <h1>Contact&nbsp;&nbsp;Us</h1>
         <ul class="bread-crumbs no-dots">
             <li><a href="index.html">Home</a></li>
+            <li class="bread-crumbs__arrow">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                </svg>
+            </li>
             <li>Contact Us</li>
         </ul>
     </section>
 <div class="contact-wrapper">
-        <form class="form-container" action="">
+        <form class="form-container" action="get">
             <fieldset class="label-wrapper">
-                <label for="form-name">Name</label>
+                <label class="contact-label" for="form-name">Name</label>
                 <input type="text" id="form-name">
             </fieldset>
 
             <fieldset class="form-2-column">
                 <div>
-                    <label for="form-phone">Phone</label>
+                    <label class="contact-label" for="form-phone">Phone</label>
                     <input type="text" id="form-phone">
                 </div>
                 <div>
-                    <label for="form-email">Email</label>
+                    <label class="contact-label" for="form-email">Email</label>
                     <input type="text" id="form-email">
                 </div>
             </fieldset>
 
             <fieldset class="label-wrapper">
-                <label for="form-textarea">Message</label>
-                <textarea id="form-textarea" cols="30" rows="10">
+                <label class="contact-label" for="form-textarea">Message</label>
+                <textarea id="form-textarea" cols="30" rows="5">
                 </textarea>
             </fieldset>
             <div class="checkbox-list">
@@ -108,7 +113,7 @@
         </div>
         <div class="column">
             <h4>Connect</h4>
-            <form action="">
+            <form action="get">
                 <input class="email" type="text" placeholder="Email">
                 <input class="button" type="submit" value="join">
             </form>
@@ -135,6 +140,7 @@
         </div>
     </div>
     <div class="second-block-footer">
+                <div class="rating-caption"> Company Rating</div>
                 <div class="rating no-dots">
                     <input type="radio" id="rating-item5" name="rating-star" class="rating-star">
                     <label for="rating-item5" class="rating-label">
@@ -171,12 +177,11 @@
                                 </svg>
                             </label>
                 </div>
-                <div class="rating-caption"> Company Rating</div>
                 <div class="copyright">Copyright © 2018 Dlk • Design Life Kids</div>
                 <a class="design-studio" href="#">Web Design — Direct Line Development</a>
-    </div>
+            </div>
+        </div>
     </footer>
-     <script src="scripts/script.js">
-    </script> 
+    <script src="scripts/script.js"></script> 
 </body>
 </html>

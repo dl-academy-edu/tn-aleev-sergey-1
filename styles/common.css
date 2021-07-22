@@ -98,7 +98,7 @@ h3 {
     line-height: 32px;
 }
 h1 {
-    line-height: 110%;
+    line-height: 100%;
 }
 .page-title {
     margin-top: 60px;
@@ -206,6 +206,9 @@ h2 {
     font-family: Crimson-Text-Italic;
     font-size: 20px;
     line-height: 25px;
+}
+.bread-crumbs__arrow {
+    padding: 0 20px;
 }
 .bread-crumbs li:last-child{
     opacity: 0.5;
@@ -437,23 +440,23 @@ h2 {
     border: 1px solid #FFFDFD;
     border-right: none;
 }
+.rating input {
+    display: none;
+}
+.rating-caption,
 .rating {
-    position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
-    left: 190px;
-    width: 97px;
-    justify-content: space-between;
+  display: flex;
+}
+.rating {
+  flex-direction: row-reverse;
+  margin-left: 25px;
+  margin-right: 155px;
+  width: 97px;
+  justify-content: space-between;
 }
 .rating input {
     display: none;
 }
-.rating-caption {
-    display: flex;
-    position: relative;
-    margin-right: 277px;
-}
-
 
 
 .rating-star:checked + label path,
@@ -522,12 +525,15 @@ h4, .design-studio {
     background: #E5EAF8;
     padding: 42px 40px;
 }
-
+.contact-label {
+    font-size: 14px;
+    line-height: 20px;
+}
 .form-container input,
 .label-wrapper textarea {
     background: #FFFFFF;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 14px 0 11px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 13px 0 10px 19px;
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
@@ -536,9 +542,12 @@ h4, .design-studio {
 
 .form-container input:focus,
 .label-wrapper textarea:focus {
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #C29974;
 }
-
+.form-container input:disabled,
+.label-wrapper textarea:disabled {
+    border: 1px solid #EBEBEB;
+}
 .form-2-column {
     display: flex;
     margin: 20px 0;
@@ -557,7 +566,7 @@ h4, .design-studio {
 
 .label-wrapper label,
 .form-2-column label{
-    padding-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 .form-container .custom-checkbox + label {

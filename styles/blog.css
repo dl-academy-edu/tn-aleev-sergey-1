@@ -14,6 +14,9 @@
 {
     margin: 0 20px;
 }
+.blog-card img {
+    background-color: #C5AC8B;
+}
 .upload-date {
     padding-top: 20px;
     padding-bottom: 7px;
